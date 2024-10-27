@@ -1,6 +1,6 @@
 class Person:
 
-    def set_details(self, name, age):
+    def __init__(self, name, age):
         self.name = name
         self.age = age
 
@@ -14,12 +14,12 @@ class Person:
             print('Hello, how do you do?')
         self.display()
 
-p1 = Person()
-p2 = Person()
-
-p1.set_details('Bob', 20)
-p2.set_details('Ted', 90)
-
+p1 = Person('John', 20)
+p1.display()
 p1.greet()
 
+p2 = Person('Jack', 90)
+p2.display()
 p2.greet()
+
+
